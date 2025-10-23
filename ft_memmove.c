@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkhalid <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: bkhalid <bkhalid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 18:40:10 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/15 18:40:12 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/10/20 19:00:41 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
 #include <stdio.h>
 #include <string.h>
 
@@ -18,7 +18,9 @@ void *ft_memmove(void *dest, const void *src, size_t n)
     int i;
     unsigned char *x = dest;
     unsigned char *y = (unsigned char *) src;
-
+    
+    if (!dest && !src) 
+        return (NULL);
     if(x < y)
     {
         i = 0;
@@ -37,6 +39,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
             i--;
         } 
     }
+    return (dest);
 }
 
 int main(void)

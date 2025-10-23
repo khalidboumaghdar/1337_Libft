@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkhalid <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: bkhalid <bkhalid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 10:55:05 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/18 10:55:07 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/10/18 17:41:35 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "stdio.h"
 #include <ctype.h>
-
 
 int ft_tolower(int c)
 {

@@ -1,43 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhalid <bkhalid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/15 15:55:13 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/20 19:00:10 by bkhalid          ###   ########.fr       */
+/*   Created: 2025/10/19 11:25:56 by bkhalid           #+#    #+#             */
+/*   Updated: 2025/10/22 11:29:49 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
 
-void *ft_memcpy(void *dest, const void *src, size_t n)
+
+int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    int i;
+    size_t i;
     i = 0;
-    unsigned char *src1 = (unsigned char *) src;
-    unsigned char *dest1 = (unsigned char *) dest; 
-    if (!dest || !src)
-        return (NULL);
+    
     while (i < n)
     {
-        dest1[i] = src1[i];
+        if(s1[i] != s2[i] || s1[i] == '\0' || s2[i] == '\0')
+        {
+            return ((unsigned char) s1[i] - (unsigned char) s2[i]);
+        }
         i++;
     }
-    return (dest);
+    return (0);
 }
+
+
+
 int main(void)
 {
-    int  src = 145000;
-    char dest[4];
-    int value;
-    memcpy(dest,&src,4);
-    memcpy(&value, dest, 4); 
-   
-    printf("%d", value);
-
- 
+    char s1[] = "khalid";
+    char s2[] = "hk";
+    int x = ft_strncmp(s1,s2,2);
+    printf("%d \n",x);    
 }

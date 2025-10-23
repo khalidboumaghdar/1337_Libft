@@ -1,43 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhalid <bkhalid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/15 15:55:13 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/20 19:00:10 by bkhalid          ###   ########.fr       */
+/*   Created: 2025/10/19 11:56:02 by bkhalid           #+#    #+#             */
+/*   Updated: 2025/10/20 18:52:59 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include <stdio.h>
 #include <string.h>
 
-void *ft_memcpy(void *dest, const void *src, size_t n)
+void *ft_memchr(const void *s, int c, size_t n)
 {
-    int i;
+    unsigned char *x = (unsigned char *) s;
+    size_t i;
     i = 0;
-    unsigned char *src1 = (unsigned char *) src;
-    unsigned char *dest1 = (unsigned char *) dest; 
-    if (!dest || !src)
+    if(!s)
         return (NULL);
-    while (i < n)
+    while ( i < n)
     {
-        dest1[i] = src1[i];
+        if(x[i] == (unsigned char)c)
+        {
+            return (void *)&x[i];
+        }
         i++;
     }
-    return (dest);
+    return (NULL);
 }
+
 int main(void)
 {
-    int  src = 145000;
-    char dest[4];
-    int value;
-    memcpy(dest,&src,4);
-    memcpy(&value, dest, 4); 
-   
-    printf("%d", value);
-
- 
+    char c[] = "khalid";
+    unsigned char *x = ft_memchr(NULL,'k',5);    
+    printf("%s \n",x);
 }

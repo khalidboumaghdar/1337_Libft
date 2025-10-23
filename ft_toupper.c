@@ -3,33 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkhalid <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: bkhalid <bkhalid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 10:31:37 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/18 10:31:40 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/10/18 17:42:40 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <stdio.h>
-#include <ctype.h>
+#include "libft.h"
 
 int ft_toupper(int c)
 {
     if (c >= 65 && c <= 90 || c >= 97 && c <= 122)
     {
-        c -= 32 ; 
+        c -= 32 ;
     }
     return (c);
 }
 
-int main(void)
-{
-    int x; 
+// int main(void)
+// {
+//     int x; 
 
-    x = ft_toupper('e');
-printf("%d \n" , x);
+//     x = ft_toupper('e');
+// printf("%d \n" , x);
 
-}
+// }
 
 
