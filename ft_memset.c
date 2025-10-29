@@ -3,32 +3,47 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkhalid <bkhalid@student.42.fr>            +#+  +:+       +#+        */
+/*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:28:41 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/19 17:25:25 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/10/27 17:07:12 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
-void *ft_memset(void *str,int c,size_t n)
+void	*ft_memset(void *str, int c, size_t n)
 {
-    int i;
-    i = 0;
-    unsigned char *x = str;
-    while (i < n)
-    {
-        x[i] = (unsigned char)c;
-        i++;
-    }
-    return (str);
+	size_t			i;
+	unsigned char	*x;
+
+	i = 0;
+	x = (unsigned char *)str;
+	while (i < n)
+	{
+		x[i] = (unsigned char)c;
+		i++;
+	}
+	return (str);
 }
-int main(void)
-{
-    int x = 0;
-    ft_memset(&x,170,2);
-    ft_memset((char *)&x + 2, 5, 1);
-    printf("ft_memset   : %d\n", x);
-}
+// int main(void)
+// {
+//     char str[] = "khalid";
+// int x = 0; // 0 0 0 0
+//     int i = 5;
+//     int j = 6;
+//     while(i >= 0)
+//     {
+//         ft_memset(&x, str[i], j);
+//         i--;
+//         j--;
+//     }
+//         // long x = 0;
+
+// ft_memset(&x, 5, 2);
+// ft_memset(&x , 57, 1);
+// printf("%d \n",x);
+
+//   char *p = (char *)&x;
+//   printf("ft_memset   : %s\n", p);
+// }

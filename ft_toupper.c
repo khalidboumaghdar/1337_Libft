@@ -6,28 +6,26 @@
 /*   By: bkhalid <bkhalid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 10:31:37 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/18 17:42:40 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/10/27 09:58:45 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if (c >= 65 && c <= 90 || c >= 97 && c <= 122)
-    {
-        c -= 32 ;
-    }
-    return (c);
+	if (c >= 97 && c <= 122)
+	{
+		c -= 32;
+	}
+	return (c);
 }
 
 // int main(void)
 // {
-//     int x; 
+//     int x;
 
 //     x = ft_toupper('e');
 // printf("%d \n" , x);
 
 // }
-
-

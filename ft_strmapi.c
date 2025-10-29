@@ -1,31 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 14:49:21 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 09:54:58 by bkhalid          ###   ########.fr       */
+/*   Created: 2025/10/29 17:05:40 by bkhalid           #+#    #+#             */
+/*   Updated: 2025/10/29 17:06:37 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+    
 }
-// void ft_putchar(char c)
-// {
-//     write(1,&c,1);
-// }
-// void ft_putnbr(int nb)
-// {
-//     ft_putchar(nb + '0');
-// }
-// int main(void)
-// {
-//     int x  = ft_isprint('\n');
-//     ft_putnbr(x);
-// }
+int main()
+{
+    
+}

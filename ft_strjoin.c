@@ -1,47 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 12:51:22 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 16:14:11 by bkhalid          ###   ########.fr       */
+/*   Created: 2025/10/24 10:03:35 by bkhalid           #+#    #+#             */
+/*   Updated: 2025/10/28 21:51:41 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int	i;
-	int	sign;
-	int	res;
+	char	*p;
+	size_t	i;
+	size_t	j;
 
-	res = 0;
+	if (!s1 || !s2)
+		return (NULL);
+	p = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!p)
+		return (NULL);
 	i = 0;
-	sign = 1;
-	while (nptr[i] == ' ' || (nptr[i] >= '\t' && nptr[i] <= '\r'))
+	while (s1[i])
 	{
+		p[i] = s1[i];
 		i++;
 	}
-	if (nptr[i] == '+' || nptr[i] == '-')
+	j = 0;
+	while (s2[j])
 	{
-		if (nptr[i] == '-')
-			sign = -sign;
-		i++;
+		p[i + j] = s2[j];
+		j++;
 	}
-	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		res = res * 10 + (nptr[i] - '0');
-		i++;
-	}
-	return (res * sign);
+	p[i + j] = '\0';
+	return (p);
 }
-
-// int main(void)
+// #include <stdio.h>
+// int	main(void)
 // {
-//     char c[] = "+-214748364";
-//     printf("%d\n",ft_atoi(c));
+// 	char s1[] = "khalid";
+// 	char s2[] = "Boumaghdar";
 
+// 	char *p = ft_strjoin(s1, s2);
+// 	printf("%s\n", p);
+// 	free(p);
 // }

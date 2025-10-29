@@ -6,25 +6,22 @@
 /*   By: bkhalid <bkhalid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 10:55:05 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/18 17:41:35 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/10/27 10:26:43 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stdio.h"
-#include <ctype.h>
-
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-     if (c >= 65 && c <= 90 || c >= 97 && c <= 122)
-    {
-        c += 32 ; 
-    }
-    return (c);
+	if (c >= 65 && c <= 90)
+	{
+		c += 32;
+	}
+	return (c);
 }
-int main(void)
-{
-    int x; 
+// int main(void)
+// {
+//     int x;
 
-    x = ft_tolower('E');
-    printf("%d \n" , x);
-}
+//     x = ft_tolower('E');
+//     printf("%d \n" , x);
+// }
