@@ -1,31 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/18 10:31:37 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/30 11:55:06 by bkhalid          ###   ########.fr       */
+/*   Created: 2025/10/30 18:05:44 by bkhalid           #+#    #+#             */
+/*   Updated: 2025/10/30 19:05:43 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+void	ft_putnbr_fd(int n, int fd)
 {
-	if (c >= 97 && c <= 122)
+	long	nb;
+	long	div;
+
+	nb = n;
+	if (nb < 0)
 	{
-		c -= 32;
+		ft_putchar_fd('-', fd);
+		nb = -nb;
 	}
-	return (c);
+	if (nb == 0)
+	{
+		ft_putchar_fd('0', fd);
+		return ;
+	}
+	div = 1;
+	while (nb / div >= 10)
+		div *= 10;
+	while (div > 0)
+	{
+		ft_putchar_fd((nb / div) + '0', fd);
+		nb %= div;
+		div /= 10;
+	}
 }
 
-// int main(void)
-// {
-//     int x;
-
-//     x = ft_toupper('e');
-// printf("%d \n" , x);
-
-// }
+int	main(void)
+{
+	ft_putnbr_fd(12, 1);
+}

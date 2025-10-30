@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/18 10:31:37 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/30 11:55:06 by bkhalid          ###   ########.fr       */
+/*   Created: 2025/10/30 17:51:31 by bkhalid           #+#    #+#             */
+/*   Updated: 2025/10/30 17:53:24 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+void	ft_putchar_fd(char c, int fd)
 {
-	if (c >= 97 && c <= 122)
-	{
-		c -= 32;
-	}
-	return (c);
+	write(fd, &c, 1);
 }
-
-// int main(void)
-// {
-//     int x;
-
-//     x = ft_toupper('e');
-// printf("%d \n" , x);
-
-// }

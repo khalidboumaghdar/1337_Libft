@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 17:36:41 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 16:59:14 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/10/30 18:32:04 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,10 @@ char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_putchar_fd(char c, int fd);
+void ft_putendl_fd(char *s, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void ft_putnbr_fd(int n, int fd);
 #endif

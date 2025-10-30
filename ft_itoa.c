@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 17:28:24 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 16:58:43 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/10/30 17:24:52 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,6 @@ char	*ft_itoa(int n)
 	if (!str)
 		return (NULL);
 	str[len] = '\0';
-	if (n == 0)
-		ft_strdup("0");
 	if (nb < 0)
 	{
 		str[0] = '-';

@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 12:21:59 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/28 16:09:31 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/10/30 16:20:15 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,7 +112,6 @@ char	**ft_split(char const *s, char c)
 // {
 // 	char	**result;
 // 	int		i;
-
 // 	// Test 1: Empty string
 // 	result = ft_split("", 'e');
 // 	printf("Test 1: \"\" sep='e'\n");
