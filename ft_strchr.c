@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 11:04:07 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 09:56:32 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:03:49 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-// int main(void)
-// {
-//     char str[] = "khalid";
-//     char *p = strchr(str,'\0');
-//     printf("%s \n",p );
-// }

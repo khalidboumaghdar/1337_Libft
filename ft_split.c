@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 12:21:59 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/30 16:20:15 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/04 18:33:37 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,70 +101,9 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	count = ft_count(s, c);
-	pr = (char **)malloc((count + 1) * sizeof(char *));
+	pr = malloc((count + 1) * sizeof(char *));
 	if (!pr)
 		return (NULL);
 	put_words(pr, s, c);
 	return (pr);
 }
-
-// int	main(void)
-// {
-// 	char	**result;
-// 	int		i;
-// 	// Test 1: Empty string
-// 	result = ft_split("", 'e');
-// 	printf("Test 1: \"\" sep='e'\n");
-// 	for (i = 0; result[i]; i++)
-// 		printf("[%s]", result[i]);
-// 	free_pr(result, i);
-// 	// Test 2: No separator in string
-// 	result = ft_split("hello", 'z');
-// 	printf("\nTest 2: \"hello\" sep='z'\n");
-// 	for (i = 0; result[i]; i++)
-// 		printf("[%s]\n", result[i]);
-// 	free_pr(result, i);
-// 	// Test 3: Only separators
-// 	result = ft_split("zzz", 'z');
-// 	printf("\nTest 3: \"zzz\" sep='z'\n");
-// 	for (i = 0; result[i]; i++)
-// 		printf("[%s]\n", result[i]);
-// 	free_pr(result, i);
-// 	// Test 4: Separator at start, end, and middle
-// 	result = ft_split("##hello##world##", '#');
-// 	printf("\nTest 4: \"##hello##world##\" sep='#'\n");
-// 	for (i = 0; result[i]; i++)
-// 		printf("[%s]\n", result[i]);
-// 	free_pr(result, i);
-// 	// Test 5: Multiple consecutive separators
-// 	result = ft_split("a--b---c", '-');
-// 	printf("\nTest 5: \"a--b---c\" sep='-'\n");
-// 	for (i = 0; result[i]; i++)
-// 		printf("[%s]\n", result[i]);
-// 	free_pr(result, i);
-// 	// Test 6: Single character string
-// 	result = ft_split("a", '-');
-// 	printf("\nTest 6: \"a\" sep='-'\n");
-// 	for (i = 0; result[i]; i++)
-// 		printf("[%s]\n", result[i]);
-// 	free_pr(result, i);
-// 	// Test 7: Only separator character
-// 	result = ft_split("-", '-');
-// 	printf("\nTest 7: \"-\" sep='-'\n");
-// 	for (i = 0; result[i]; i++)
-// 		printf("[%s]\n", result[i]);
-// 	free_pr(result, i);
-// 	// Test 8: Comma separated
-// 	result = ft_split("a,b,c", ',');
-// 	printf("\nTest 8: \"a,b,c\" sep=','\n");
-// 	for (i = 0; result[i]; i++)
-// 		printf("[%s]\n", result[i]);
-// 	free_pr(result, i);
-// 	// Test 9: Complex string
-// 	result = ft_split("hello-world-this-is-ft_split", '-');
-// 	printf("\nTest 9: \"hello-world-this-is-ft_split\" sep='-'\n");
-// 	for (i = 0; result[i]; i++)
-// 		printf("[%s]\n", result[i]);
-// 	free_pr(result, i);
-// 	return (0);
-// }

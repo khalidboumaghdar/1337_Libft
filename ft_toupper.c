@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 10:31:37 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/30 11:55:06 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:07:30 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-
-// int main(void)
-// {
-//     int x;
-
-//     x = ft_toupper('e');
-// printf("%d \n" , x);
-
-// }

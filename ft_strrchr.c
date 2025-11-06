@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkhalid <bkhalid@student.42.fr>            +#+  +:+       +#+        */
+/*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 11:44:22 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/27 10:01:38 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:06:22 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-// int main(void)
-// {
-//      char str[] = "khalidl";
-//     char *p = ft_strrchr(str,'\0');
-//     printf("%c \n",*p );
-
-// }

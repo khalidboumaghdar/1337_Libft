@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:28:41 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/27 17:07:12 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:10:28 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,24 +26,3 @@ void	*ft_memset(void *str, int c, size_t n)
 	}
 	return (str);
 }
-// int main(void)
-// {
-//     char str[] = "khalid";
-// int x = 0; // 0 0 0 0
-//     int i = 5;
-//     int j = 6;
-//     while(i >= 0)
-//     {
-//         ft_memset(&x, str[i], j);
-//         i--;
-//         j--;
-//     }
-//         // long x = 0;
-
-// ft_memset(&x, 5, 2);
-// ft_memset(&x , 57, 1);
-// printf("%d \n",x);
-
-//   char *p = (char *)&x;
-//   printf("ft_memset   : %s\n", p);
-// }

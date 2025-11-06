@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 12:09:45 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/11/01 17:15:47 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/06 17:30:55 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,3 @@ t_list	*ft_lstnew(void *content)
 	t_list_v->next = NULL;
 	return (t_list_v);
 }
-
-// int main()
-// {
-//     int x = 60;
-//     // t_list *premier  = ft_lstnew(&x);
-
-//  printf("Content = %d\n ",sizeof(t_list));
-// }

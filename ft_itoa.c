@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 17:28:24 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/30 17:24:52 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:09:49 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,10 +56,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	char *x = ft_itoa(-52000);
-
-// 	printf("%s \n", x);
-// }

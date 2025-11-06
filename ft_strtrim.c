@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 18:40:16 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 11:50:15 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:06:36 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,13 +51,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	p[end - start] = '\0';
 	return (p);
 }
-// int main()
-// {
-//     char t[] = " ------";
-
-//     char set[] = " -";
-
-//     char *p = ft_strtrim(t,set);
-
-//     printf("%s \n",p);
-// }

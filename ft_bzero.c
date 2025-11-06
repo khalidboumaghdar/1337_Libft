@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:26:30 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/27 17:00:23 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:08:23 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-// int main(void)
-// {
-//     char number[6] = "khalid";
-//     ft_bzero(NULL,3);
-//     for (int i = 0; i < 6; i++)
-//     printf("%c ", number[i]);
-// }

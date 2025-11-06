@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkhalid <bkhalid@student.42.fr>            +#+  +:+       +#+        */
+/*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 10:55:05 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/27 10:26:43 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:07:20 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-// int main(void)
-// {
-//     int x;
-
-//     x = ft_tolower('E');
-//     printf("%d \n" , x);
-// }

@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 16:10:17 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 10:24:14 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:11:02 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,3 @@ char	*ft_strdup(const char *s)
 	p[i] = '\0';
 	return (p);
 }
-
-// int main()
-// {
-//     char x1[] = "khalid boumagh";
-//     char *x = strdup(x1);
-//     printf("%s \n",x);
-// }

@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 18:02:43 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/30 18:04:59 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/04 19:48:13 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int i;
+	int	i;
+
 	if (!s)
 		return ;
 	i = 0;

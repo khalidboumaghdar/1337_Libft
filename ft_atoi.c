@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 12:51:22 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 16:14:11 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/04 18:08:51 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (res * sign);
 }
-
-// int main(void)
-// {
-//     char c[] = "+-214748364";
-//     printf("%d\n",ft_atoi(c));
-
-// }

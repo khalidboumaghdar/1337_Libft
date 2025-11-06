@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 09:59:06 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 09:59:53 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/06 11:14:41 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,17 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[len_dst + i] = '\0';
 	return (len_dst + len_src);
 }
-
-// int main(void)
-// {
-//     char dest[]= "oussama";
-//     char src[] = "issfoulaaaaaa";
-//     size_t x = ft_strlcat(dest,src,9);
-// //  int len_dest = ft_strlen(dest);
-// //  int len_src = ft_strlen(src);
-// //  printf("dest = %d \n src = %d \n",len_dest,len_src);
-
-//     printf("%d\n",x);
-//     printf("%s\n",dest);
-
-// }

@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 18:05:44 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/30 19:05:43 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:10:39 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,4 @@ void	ft_putnbr_fd(int n, int fd)
 		nb %= div;
 		div /= 10;
 	}
-}
-
-int	main(void)
-{
-	ft_putnbr_fd(12, 1);
 }

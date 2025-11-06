@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 18:41:30 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 09:58:06 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:04:33 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
-
-// #include <string.h>
-// int main(void)
-// {
-//     char dest[] = "yyyjjjjjjjjjjjjjjjyyyyyyyy";
-//     char src[] = "khalidgh";
-
-//    size_t x = ft_strlcpy(dest,src,6);
-//     printf("%d\n" , x);
-// }

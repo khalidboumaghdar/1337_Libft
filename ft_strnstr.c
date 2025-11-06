@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 10:30:59 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 10:01:58 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:06:15 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-// int main(void)
-// {
-//     char *big = "My name is khalid boumaghdar";
-//     char *lettle = "djdgj";
-//     char *x = strnstr(big,lettle,19);
-//     printf("%s\n",x);
-// }

@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 11:25:56 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/28 21:53:39 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/06 11:14:59 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main(void)
-// {
-//     char s1[] = "khalid";
-//     char s2[] = "hk";
-//     int x = ft_strncmp(s1,s2,2);
-//     printf("%d \n",x);
-// }

@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:55:13 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/29 09:50:39 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:10:07 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// int main(void)
-// {
-//     int  src = 145000;
-//     char dest[4];
-//     int value;
-//     memcpy(dest,&src,4);
-//     memcpy(&value, dest, 4);
-
-//     printf("%d", value);
-
-// }

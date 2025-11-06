@@ -6,7 +6,7 @@
 /*   By: bkhalid <bkhalid@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 15:59:46 by bkhalid           #+#    #+#             */
-/*   Updated: 2025/10/27 17:06:53 by bkhalid          ###   ########.fr       */
+/*   Updated: 2025/11/01 10:09:59 by bkhalid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-// int main(void)
-// {
-//     char c[] = "kha";
-//     char s[] = "khalid";
-//     int x  = ft_memcmp(c,s,3);
-//     printf("%d\n",x);
-// }
